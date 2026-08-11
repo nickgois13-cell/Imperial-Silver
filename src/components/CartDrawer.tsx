@@ -18,7 +18,7 @@ export function CartDrawer() {
     const text = `Olá! Quero finalizar meu pedido na Argenta:\n\n${items}\n\nTotal: ${formatBRL(
       total,
     )}`;
-    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+    return `https://wa.me/${+551499123-5508}?text=${encodeURIComponent(text)}`;
   };
 
   return (
