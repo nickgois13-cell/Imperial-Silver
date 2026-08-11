@@ -35,7 +35,7 @@ export function Header() {
             scrolled ? "text-foreground" : "text-background"
           }`}
         >
-          ARGENTA
+          IMPERIAL SILVER
         </a>
         <nav className="hidden items-center gap-8 md:flex">
           {links.map((l) => (
