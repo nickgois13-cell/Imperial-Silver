@@ -18,7 +18,7 @@ export function CartDrawer() {
     const text = `Olá! Quero finalizar meu pedido na Argenta:\n\n${items}\n\nTotal: ${formatBRL(
       total,
     )}`;
-    return `https://wa.me/${+551499123-5508}?text=${encodeURIComponent(text)}`;
+    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
   };
 
   return (
@@ -39,7 +39,7 @@ export function CartDrawer() {
         <header className="flex items-center justify-between border-b border-border px-6 py-5">
           <div className="flex items-center gap-2">
             <ShoppingBag className="h-4 w-4 text-muted-foreground" />
-            <span className="eyebrow">Sacola ({count})</span>
+            <span className="eyebrow">Carrinho ({count})</span>
           </div>
           <button
             onClick={close}
@@ -55,7 +55,7 @@ export function CartDrawer() {
             <div className="flex h-full flex-col items-center justify-center gap-3 text-center">
               <ShoppingBag className="h-8 w-8 text-silver-2" strokeWidth={1} />
               <p className="text-sm text-muted-foreground">
-                Sua sacola está vazia.
+                Seu carrinho está vazio.
               </p>
             </div>
           ) : (
