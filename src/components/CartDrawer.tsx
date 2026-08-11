@@ -15,7 +15,7 @@ export function CartDrawer() {
           )}`,
       )
       .join("\n");
-    const text = `Olá! Quero finalizar meu pedido na Argenta:\n\n${items}\n\nTotal: ${formatBRL(
+    const text = `Olá! Quero finalizar meu pedido na Imperial:\n\n${items}\n\nTotal: ${formatBRL(
       total,
     )}`;
     return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
