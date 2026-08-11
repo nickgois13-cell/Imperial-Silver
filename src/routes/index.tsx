@@ -88,7 +88,7 @@ function Hero() {
         muted={muted}
         playsInline
       />
-      <div className="hero-veil absolute inset-0" />
+      <div className="absolute inset-0 bg-gradient-to-b from-foreground/50 via-foreground/25 to-foreground/75" />
 
       <div className="relative mx-auto flex min-h-[92vh] max-w-6xl flex-col justify-end px-6 pb-20 pt-40">
         <Reveal>
