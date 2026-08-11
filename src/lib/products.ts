@@ -4,7 +4,7 @@ import pulseira2 from "@/assets/pulseira-2.jpg";
 import colar1 from "@/assets/colar-1.jpg";
 import colar2 from "@/assets/colar-2.jpg";
 
-export const WHATSAPP_NUMBER = "5511999999999";
+export const WHATSAPP_NUMBER = "5514991235508";
 
 export const products: Product[] = [
   {
