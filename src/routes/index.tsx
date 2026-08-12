@@ -21,7 +21,7 @@ export const Route = createFileRoute("/")({
         content:
           "Joalheria de prata 925 em edições reduzidas. Pulseiras e colares com acabamento espelhado e pedido finalizado pelo WhatsApp.",
       },
-      { property: "og:title", content: "Argenta — Prata 925 em edições reduzidas" },
+      { property: "og:title", content: "Imperial Silver — Prata 925 em edições reduzidas" },
       {
         property: "og:description",
         content:
