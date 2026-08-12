@@ -15,13 +15,13 @@ import heroPoster from "@/assets/hero-poster.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Argenta — Pulseiras e Colares de Prata 925" },
+      { title: "Imperial Silver — Pulseiras e Colares de Prata 925" },
       {
         name: "description",
         content:
           "Joalheria de prata 925 em edições reduzidas. Pulseiras e colares com acabamento espelhado e pedido finalizado pelo WhatsApp.",
       },
-      { property: "og:title", content: "Argenta — Prata 925 em edições reduzidas" },
+      { property: "og:title", content: "Imperial Silver — Prata 925 em edições reduzidas" },
       {
         property: "og:description",
         content:
@@ -34,26 +34,26 @@ export const Route = createFileRoute("/")({
 
 const reviews = [
   {
-    name: "Marina L.",
-    city: "São Paulo, SP",
+    name: "ALINE F.",
+    city: "Agudos, SP",
     text: "A pulseira trançada é ainda mais bonita ao vivo. Peso e brilho de joalheria de verdade.",
     stars: 5,
   },
   {
-    name: "Rafael A.",
-    city: "Curitiba, PR",
+    name: "DIONE K.",
+    city: "Agudos,SP",
     text: "Fechei tudo pelo WhatsApp em dois minutos e recebi em três dias. Atendimento impecável.",
     stars: 5,
   },
   {
-    name: "Júlia M.",
-    city: "Belo Horizonte, MG",
+    name: "PATRICIA A.",
+    city: "Agudos, SP",
     text: "Uso o colar ponto de luz todos os dias, inclusive na academia, e continua intacto.",
     stars: 5,
   },
   {
     name: "Camila R.",
-    city: "Florianópolis, SC",
+    city: "Agudos, SP",
     text: "Embalagem linda, certificado da prata e flanela. Comprei o segundo de presente.",
     stars: 5,
   },
@@ -259,7 +259,7 @@ function Footer() {
       <div className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-2">
-            <p className="font-display text-xl tracking-[0.35em]">ARGENTA</p>
+            <p className="font-display text-xl tracking-[0.35em]">IMPERIAL SILVER</p>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-primary-foreground/70">
               Joalheria de prata esterlina 925 em edições reduzidas. Cada peça
               é polida e conferida à mão antes do envio.
@@ -292,8 +292,8 @@ function Footer() {
               Atendimento
             </p>
             <ul className="mt-4 space-y-2 text-sm text-primary-foreground/75">
-              <li>Seg a sex, 9h às 18h</li>
-              <li>ola@argenta.com.br</li>
+              <li>Sab a s,dom 9h às 18h</li>
+              <li>Nick.Gois13@gmail.com</li>
               <li>
                 <a
                   href={`https://wa.me/${WHATSAPP_NUMBER}`}
@@ -308,7 +308,7 @@ function Footer() {
           </div>
         </div>
         <div className="mt-14 flex flex-col gap-2 border-t border-primary-foreground/15 pt-6 text-xs text-primary-foreground/50 sm:flex-row sm:justify-between">
-          <p>© {new Date().getFullYear()} Argenta Joalheria</p>
+          <p>© {new Date().getFullYear()} Imperial Silver Joalheria</p>
           <p>Pagamento exclusivamente via WhatsApp</p>
         </div>
       </div>
