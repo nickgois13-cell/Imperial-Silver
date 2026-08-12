@@ -15,7 +15,7 @@ import heroPoster from "@/assets/hero-poster.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Argenta — Pulseiras e Colares de Prata 925" },
+      { title: "Imperial Silver — Pulseiras e Colares de Prata 925" },
       {
         name: "description",
         content:
