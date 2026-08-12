@@ -259,7 +259,7 @@ function Footer() {
       <div className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-2">
-            <p className="font-display text-xl tracking-[0.35em]">ARGENTA</p>
+            <p className="font-display text-xl tracking-[0.35em]">IMPERIAL SILVER</p>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-primary-foreground/70">
               Joalheria de prata esterlina 925 em edições reduzidas. Cada peça
               é polida e conferida à mão antes do envio.
