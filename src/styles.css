@@ -263,3 +263,73 @@
   background-size: 200% 100%;
   animation: shimmer-sweep 6s linear infinite;
 }
+
+/* Cursor prateado interativo */
+html.has-silver-cursor,
+html.has-silver-cursor * {
+  cursor: none !important;
+}
+
+.silver-cursor-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background: radial-gradient(
+    circle at 30% 30%,
+    oklch(1 0 0) 0%,
+    oklch(0.86 0 0) 45%,
+    oklch(0.55 0 0) 100%
+  );
+  box-shadow:
+    0 0 8px oklch(0.9 0 0 / 0.75),
+    0 0 20px oklch(0.75 0 0 / 0.45);
+  will-change: transform;
+}
+
+.silver-cursor-ring {
+  width: 38px;
+  height: 38px;
+  border-radius: 9999px;
+  border: 1px solid oklch(0.85 0 0 / 0.55);
+  background:
+    conic-gradient(
+      from 0deg,
+      oklch(1 0 0 / 0.28),
+      oklch(0.7 0 0 / 0.05),
+      oklch(1 0 0 / 0.3),
+      oklch(0.7 0 0 / 0.05),
+      oklch(1 0 0 / 0.28)
+    );
+  box-shadow:
+    0 0 18px oklch(0.85 0 0 / 0.35),
+    inset 0 0 12px oklch(1 0 0 / 0.2);
+  backdrop-filter: blur(1px);
+  transition:
+    width 0.35s var(--ease-lux),
+    height 0.35s var(--ease-lux),
+    opacity 0.35s var(--ease-lux),
+    border-color 0.35s var(--ease-lux);
+  will-change: transform;
+  animation: silver-spin 5s linear infinite;
+}
+
+.silver-cursor-ring[data-active] {
+  width: 62px;
+  height: 62px;
+  border-color: oklch(1 0 0 / 0.85);
+  box-shadow:
+    0 0 28px oklch(0.9 0 0 / 0.5),
+    inset 0 0 18px oklch(1 0 0 / 0.3);
+}
+
+.silver-cursor-ring[data-pressed] {
+  width: 26px;
+  height: 26px;
+}
+
+@keyframes silver-spin {
+  to {
+    transform-origin: center;
+    rotate: 360deg;
+  }
+}

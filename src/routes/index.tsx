@@ -7,6 +7,7 @@ import { Faq } from "@/components/Faq";
 import { Header } from "@/components/Header";
 import { ProductCard } from "@/components/ProductCard";
 import { Reveal } from "@/components/Reveal";
+import { SilverCursor } from "@/components/SilverCursor";
 import { CartProvider } from "@/lib/cart";
 import { products, WHATSAPP_NUMBER } from "@/lib/products";
 import heroVideo from "@/assets/hero-video.mp4.asset.json";
@@ -357,6 +358,7 @@ function Index() {
       </main>
       <Footer />
       <CartDrawer />
+      <SilverCursor />
     </CartProvider>
   );
 }
