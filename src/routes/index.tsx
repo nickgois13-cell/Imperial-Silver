@@ -308,7 +308,7 @@ function Footer() {
           </div>
         </div>
         <div className="mt-14 flex flex-col gap-2 border-t border-primary-foreground/15 pt-6 text-xs text-primary-foreground/50 sm:flex-row sm:justify-between">
-          <p>© {new Date().getFullYear()} Argenta Joalheria</p>
+          <p>© {new Date().getFullYear()} Imperial Silver Joalheria</p>
           <p>Pagamento exclusivamente via WhatsApp</p>
         </div>
       </div>
