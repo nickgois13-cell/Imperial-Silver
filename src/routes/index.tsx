@@ -34,26 +34,26 @@ export const Route = createFileRoute("/")({
 
 const reviews = [
   {
-    name: "Marina L.",
-    city: "São Paulo, SP",
+    name: "ALINE F.",
+    city: "Agudos, SP",
     text: "A pulseira trançada é ainda mais bonita ao vivo. Peso e brilho de joalheria de verdade.",
     stars: 5,
   },
   {
-    name: "Rafael A.",
-    city: "Curitiba, PR",
+    name: "DIONE K.",
+    city: "Agudos,SP",
     text: "Fechei tudo pelo WhatsApp em dois minutos e recebi em três dias. Atendimento impecável.",
     stars: 5,
   },
   {
-    name: "Júlia M.",
-    city: "Belo Horizonte, MG",
+    name: "PATRICIA A.",
+    city: "Agudos, SP",
     text: "Uso o colar ponto de luz todos os dias, inclusive na academia, e continua intacto.",
     stars: 5,
   },
   {
     name: "Camila R.",
-    city: "Florianópolis, SC",
+    city: "Agudos, SP",
     text: "Embalagem linda, certificado da prata e flanela. Comprei o segundo de presente.",
     stars: 5,
   },
