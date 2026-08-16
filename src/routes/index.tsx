@@ -234,9 +234,9 @@ function About() {
   ];
 
   const members = [
-    { role: "Fundadora", initials: "AF" },
-    { role: "Operações", initials: "DK" },
-    { role: "Marketing", initials: "PA" },
+    { role: "FUNDADOR", initials: "\n", name: "Felipe Demétrio" },
+    { role: "MIDIA", initials: "\n", name: "Nicolas Fadoni" },
+    { role: "DESIGN", initials: "\n", name: "Luis Postinguel" },
   ];
 
   return (
@@ -315,7 +315,7 @@ function About() {
                       {m.role}
                     </p>
                     <p className="mt-1 text-sm text-muted-foreground/70">
-                      Nome do membro
+                      {m.name}
                     </p>
                   </div>
                 </div>
@@ -327,7 +327,7 @@ function About() {
         <div className="mt-12 grid gap-6 sm:grid-cols-3">
           {[
             { number: "925", label: "Prata esterlina" },
-            { number: "100%", label: "Feito à mão" },
+            { number: "100%", label: "IMPORTADA" },
             { number: "SP", label: "Produzido em Agudos" },
           ].map((stat, i) => (
             <Reveal key={stat.label} delay={i * 100}>
