@@ -16,6 +16,13 @@ export function ProductCard({ product }: { product: Product }) {
           className="h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
         />
         <div className="pointer-events-none absolute inset-0 bg-foreground/0 transition-colors duration-500 group-hover:bg-foreground/5" />
+        {!product.inStock && (
+          <div className="absolute inset-0 flex items-center justify-center bg-background/60 backdrop-blur-sm">
+            <span className="border border-foreground px-5 py-2.5 text-[0.6875rem] uppercase tracking-[0.2em] text-foreground">
+              Fora de estoque
+            </span>
+          </div>
+        )}
       </div>
       <div className="p-6">
         <h3 className="text-2xl">{product.name}</h3>
@@ -31,7 +38,8 @@ export function ProductCard({ product }: { product: Product }) {
           </span>
           <button
             onClick={() => add(product)}
-            className="flex items-center gap-2 border border-foreground px-5 py-3 text-[0.6875rem] uppercase tracking-[0.2em] transition-colors hover:bg-primary hover:text-primary-foreground"
+            disabled={!product.inStock}
+            className="flex items-center gap-2 border border-foreground px-5 py-3 text-[0.6875rem] uppercase tracking-[0.2em] transition-colors hover:bg-primary hover:text-primary-foreground disabled:pointer-events-none disabled:border-muted-foreground/50 disabled:text-muted-foreground/50"
           >
             <Plus className="h-3 w-3" />
             Adicionar

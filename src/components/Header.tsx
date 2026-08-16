@@ -7,6 +7,7 @@ const links = [
   { href: "#colares", label: "Colares" },
   { href: "#avaliacoes", label: "Avaliações" },
   { href: "#faq", label: "FAQ" },
+  { href: "#sobre", label: "Sobre Nós" },
 ];
 
 export function Header() {
