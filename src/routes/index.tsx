@@ -252,12 +252,14 @@ function About() {
             <p className="max-w-md text-sm leading-relaxed text-muted-foreground">
               A Imperial Silver nasceu dentro de uma sala de aula, a partir de um
               projeto de empreendedorismo que uniu a vontade de criar algo
-              próprio com o amor por joias atemporais. O que começou como uma
-              ideia discutida entre amigos virou uma marca de prata 925 feita
-              para ser usada no dia a dia — sem pressa, sem excesso.
+              próprio com o amor por joias atemporais. Somos revendedores de
+              prata 925, e o que começou como uma ideia discutida entre amigos
+              virou uma marca feita para ser usada no dia a dia — sem pressa,
+              sem excesso.
             </p>
           </div>
         </Reveal>
+
 
         <div className="mt-16 grid gap-12 md:grid-cols-2">
           <Reveal>
