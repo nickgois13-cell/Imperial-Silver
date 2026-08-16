@@ -16,6 +16,7 @@ export const products: Product[] = [
       "Corrente fina com esferas polidas em intervalos regulares. Leve, discreta e feita para o uso diário.",
     material: "Prata 925 · 17 cm ajustável",
     image: pulseira1,
+    inStock: false,
   },
   {
     id: "pulseira-trance",
@@ -26,6 +27,7 @@ export const products: Product[] = [
       "Bracelete rígido de trama entrelaçada à mão, com acabamento espelhado e volume marcante.",
     material: "Prata 925 · aro 6,5 cm",
     image: pulseira2,
+    inStock: false,
   },
   {
     id: "colar-ponto-luz",
@@ -36,6 +38,7 @@ export const products: Product[] = [
       "Corrente veneziana delicada com pingente redondo e zircônia lapidada no centro.",
     material: "Prata 925 · 42 cm + 3 cm",
     image: colar1,
+    inStock: false,
   },
   {
     id: "colar-grumet",
@@ -46,5 +49,6 @@ export const products: Product[] = [
       "Elos grumet largos com fecho embutido. Peso, brilho e presença em uma peça atemporal.",
     material: "Prata 925 · 50 cm · 11 mm",
     image: colar2,
+    inStock: false,
   },
 ];

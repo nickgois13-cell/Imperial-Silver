@@ -15,6 +15,7 @@ export type Product = {
   detail: string;
   material: string;
   image: string;
+  inStock: boolean;
 };
 
 export type CartLine = { product: Product; qty: number };
