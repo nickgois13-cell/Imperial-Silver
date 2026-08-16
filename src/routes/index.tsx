@@ -293,7 +293,7 @@ function Footer() {
               Atendimento
             </p>
             <ul className="mt-4 space-y-2 text-sm text-primary-foreground/75">
-              <li>Sab a s,dom 9h às 18h</li>
+              <li>Sab a dom, 9h às 18h</li>
               <li>Nick.Gois13@gmail.com</li>
               <li>
                 <a
