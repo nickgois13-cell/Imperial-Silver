@@ -435,6 +435,16 @@ function Footer() {
               <li>Nick.Gois13@gmail.com</li>
               <li>
                 <a
+                  href="https://www.ImperialSilverPratas.com.br"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-primary-foreground"
+                >
+                  www.ImperialSilverPratas.com.br
+                </a>
+              </li>
+              <li>
+                <a
                   href={`https://wa.me/${WHATSAPP_NUMBER}`}
                   target="_blank"
                   rel="noreferrer"
@@ -445,6 +455,7 @@ function Footer() {
               </li>
             </ul>
           </div>
+
         </div>
         <div className="mt-14 flex flex-col gap-2 border-t border-primary-foreground/15 pt-6 text-xs text-primary-foreground/50 sm:flex-row sm:justify-between">
           <p>© {new Date().getFullYear()} Imperial Silver Joalheria</p>
