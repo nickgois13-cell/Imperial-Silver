@@ -234,9 +234,9 @@ function About() {
   ];
 
   const members = [
-    { role: "Fundadora", initials: "AF" },
-    { role: "Operações", initials: "DK" },
-    { role: "Marketing", initials: "PA" },
+    { role: "FUNDADOR", initials: "\n", name: "Felipe Demétrio" },
+    { role: "MIDIA", initials: "\n", name: "Nicolas Fadoni" },
+    { role: "DESIGN", initials: "\n", name: "Luis Postinguel" },
   ];
 
   return (
