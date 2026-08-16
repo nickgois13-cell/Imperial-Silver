@@ -252,12 +252,14 @@ function About() {
             <p className="max-w-md text-sm leading-relaxed text-muted-foreground">
               A Imperial Silver nasceu dentro de uma sala de aula, a partir de um
               projeto de empreendedorismo que uniu a vontade de criar algo
-              próprio com o amor por joias atemporais. O que começou como uma
-              ideia discutida entre amigos virou uma marca de prata 925 feita
-              para ser usada no dia a dia — sem pressa, sem excesso.
+              próprio com o amor por joias atemporais. Somos revendedores de
+              prata 925, e o que começou como uma ideia discutida entre amigos
+              virou uma marca feita para ser usada no dia a dia — sem pressa,
+              sem excesso.
             </p>
           </div>
         </Reveal>
+
 
         <div className="mt-16 grid gap-12 md:grid-cols-2">
           <Reveal>
@@ -433,6 +435,16 @@ function Footer() {
               <li>Nick.Gois13@gmail.com</li>
               <li>
                 <a
+                  href="https://www.ImperialSilverPratas.com.br"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-primary-foreground"
+                >
+                  www.ImperialSilverPratas.com.br
+                </a>
+              </li>
+              <li>
+                <a
                   href={`https://wa.me/${WHATSAPP_NUMBER}`}
                   target="_blank"
                   rel="noreferrer"
@@ -443,6 +455,7 @@ function Footer() {
               </li>
             </ul>
           </div>
+
         </div>
         <div className="mt-14 flex flex-col gap-2 border-t border-primary-foreground/15 pt-6 text-xs text-primary-foreground/50 sm:flex-row sm:justify-between">
           <p>© {new Date().getFullYear()} Imperial Silver Joalheria</p>
