@@ -321,6 +321,11 @@ function Footer() {
                 </a>
               </li>
               <li>
+                <a href="#sobre" className="hover:text-primary-foreground">
+                  Sobre Nós
+                </a>
+              </li>
+              <li>
                 <a href="#faq" className="hover:text-primary-foreground">
                   FAQ
                 </a>
@@ -370,6 +375,7 @@ function Index() {
       <main>
         <Hero />
         <Marquee />
+        <About />
         <ProductSection
           id="pulseiras"
           eyebrow="Produtos · Pulseiras"
