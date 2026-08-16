@@ -315,7 +315,7 @@ function About() {
                       {m.role}
                     </p>
                     <p className="mt-1 text-sm text-muted-foreground/70">
-                      Nome do membro
+                      {m.name}
                     </p>
                   </div>
                 </div>
