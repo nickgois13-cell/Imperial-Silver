@@ -214,6 +214,31 @@ function ProductSection({
 }
 
 function About() {
+  const differentials = [
+    {
+      title: "Materiais nobres",
+      desc: "Prata esterlina 925 com polimento espelhado, sem banhos que descascam com o tempo.",
+    },
+    {
+      title: "Atendimento real",
+      desc: "Cada pedido é finalizado diretamente no WhatsApp, com acompanhamento humano do início ao fim.",
+    },
+    {
+      title: "Edições reduzidas",
+      desc: "Peças lançadas em pequenos lotes para garantir controle de qualidade e exclusividade.",
+    },
+    {
+      title: "Feito no Brasil",
+      desc: "Produção, conferência e embalagem feitas em Agudos, SP, com mão de obra local.",
+    },
+  ];
+
+  const members = [
+    { role: "Fundadora", initials: "AF" },
+    { role: "Operações", initials: "DK" },
+    { role: "Marketing", initials: "PA" },
+  ];
+
   return (
     <section id="sobre" className="scroll-mt-24 bg-secondary/30 py-24">
       <div className="mx-auto max-w-6xl px-6">
@@ -221,16 +246,82 @@ function About() {
           <p className="eyebrow">Sobre Nós</p>
           <div className="mt-3 grid gap-10 md:grid-cols-2 md:items-end">
             <h2 className="text-4xl md:text-5xl">
-              Prata 925 feita para durar além das estações
+              De uma aula de empreendedorismo para quem entende brilho de
+              verdade
             </h2>
             <p className="max-w-md text-sm leading-relaxed text-muted-foreground">
-              A Imperial Silver nasceu da ideia de que joia precisa ser
-              usada todos os dias — não guardada. Cada peça é fundida,
-              polida e conferida à mão em Agudos, SP, com prata esterlina
-              925 e acabamento espelhado. Sem banhos, sem pressa.
+              A Imperial Silver nasceu dentro de uma sala de aula, a partir de um
+              projeto de empreendedorismo que uniu a vontade de criar algo
+              próprio com o amor por joias atemporais. O que começou como uma
+              ideia discutida entre amigos virou uma marca de prata 925 feita
+              para ser usada no dia a dia — sem pressa, sem excesso.
             </p>
           </div>
         </Reveal>
+
+        <div className="mt-16 grid gap-12 md:grid-cols-2">
+          <Reveal>
+            <div className="border border-border bg-card p-8">
+              <p className="text-[0.6875rem] uppercase tracking-[0.28em] text-muted-foreground">
+                O que trazemos
+              </p>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                Trabalhamos para entregar peças que combinem qualidade, preço
+                justo e design clean. Nosso foco é oferecer joias de prata 925
+                que acompanhem o cliente em todos os momentos — do trabalho a um
+                jantar especial — sem perder o brilho e sem exigir cuidados
+                extremos.
+              </p>
+            </div>
+          </Reveal>
+          <Reveal delay={120}>
+            <div className="border border-border bg-card p-8">
+              <p className="text-[0.6875rem] uppercase tracking-[0.28em] text-muted-foreground">
+                Nosso diferencial
+              </p>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                Cada peça passa por fundição, polimento e conferência manual
+                antes de ser enviada. Vendemos em edições reduzidas para manter o
+                padrão, e o atendimento é direto: a sacola é montada no site e o
+                pedido é finalizado no WhatsApp, com total transparência.
+              </p>
+            </div>
+          </Reveal>
+        </div>
+
+        <div className="mt-16">
+          <Reveal>
+            <p className="text-[0.6875rem] uppercase tracking-[0.28em] text-muted-foreground">
+              Time
+            </p>
+            <p className="mt-2 max-w-md text-sm leading-relaxed text-muted-foreground">
+              Base do time Imperial Silver — você pode completar os nomes e
+              funções no próximo passo.
+            </p>
+          </Reveal>
+          <div className="mt-8 grid gap-6 sm:grid-cols-3">
+            {members.map((m, i) => (
+              <Reveal key={m.role} delay={i * 100}>
+                <div className="flex items-center gap-4 border border-border bg-card p-6">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-full border border-border bg-secondary">
+                    <span className="font-display text-lg tracking-widest">
+                      {m.initials}
+                    </span>
+                  </div>
+                  <div>
+                    <p className="text-xs uppercase tracking-[0.16em] text-muted-foreground">
+                      {m.role}
+                    </p>
+                    <p className="mt-1 text-sm text-muted-foreground/70">
+                      Nome do membro
+                    </p>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+
         <div className="mt-12 grid gap-6 sm:grid-cols-3">
           {[
             { number: "925", label: "Prata esterlina" },
@@ -251,6 +342,7 @@ function About() {
     </section>
   );
 }
+
 
 function Reviews() {
   return (
