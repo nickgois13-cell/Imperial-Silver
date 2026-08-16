@@ -213,6 +213,45 @@ function ProductSection({
   );
 }
 
+function About() {
+  return (
+    <section id="sobre" className="scroll-mt-24 bg-secondary/30 py-24">
+      <div className="mx-auto max-w-6xl px-6">
+        <Reveal>
+          <p className="eyebrow">Sobre Nós</p>
+          <div className="mt-3 grid gap-10 md:grid-cols-2 md:items-end">
+            <h2 className="text-4xl md:text-5xl">
+              Prata 925 feita para durar além das estações
+            </h2>
+            <p className="max-w-md text-sm leading-relaxed text-muted-foreground">
+              A Imperial Silver nasceu da ideia de que joia precisa ser
+              usada todos os dias — não guardada. Cada peça é fundida,
+              polida e conferida à mão em Agudos, SP, com prata esterlina
+              925 e acabamento espelhado. Sem banhos, sem pressa.
+            </p>
+          </div>
+        </Reveal>
+        <div className="mt-12 grid gap-6 sm:grid-cols-3">
+          {[
+            { number: "925", label: "Prata esterlina" },
+            { number: "100%", label: "Feito à mão" },
+            { number: "SP", label: "Produzido em Agudos" },
+          ].map((stat, i) => (
+            <Reveal key={stat.label} delay={i * 100}>
+              <div className="border border-border bg-card p-8 text-center">
+                <p className="font-display text-4xl">{stat.number}</p>
+                <p className="mt-2 text-xs uppercase tracking-[0.16em] text-muted-foreground">
+                  {stat.label}
+                </p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Reviews() {
   return (
     <section
