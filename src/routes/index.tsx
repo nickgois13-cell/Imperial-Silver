@@ -354,7 +354,7 @@ function Reviews() {
       <div className="mx-auto max-w-6xl px-6">
         <Reveal>
           <p className="eyebrow">Avaliações</p>
-          <h2 className="mt-3 text-4xl md:text-5xl">4,9 de 5 em 1.284 pedidos</h2>
+          <h2 className="mt-3 text-4xl md:text-5xl">{"\n"}</h2>
         </Reveal>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {reviews.map((r, i) => (
