@@ -240,10 +240,15 @@ function About() {
   ];
 
   return (
-    <section id="sobre" className="scroll-mt-24 bg-secondary/30 py-24">
-      <div className="mx-auto max-w-6xl px-6">
+    <section id="sobre" className="scroll-mt-24 relative overflow-hidden bg-secondary/30 py-24">
+      <div className="silver-orb -left-32 top-0 h-[28rem] w-[28rem]" aria-hidden="true" />
+      <div className="silver-orb right-0 -bottom-32 h-[24rem] w-[24rem] opacity-40" aria-hidden="true" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,var(--silver-2)_0%,transparent_45%),radial-gradient(circle_at_70%_80%,var(--silver-1)_0%,transparent_40%)] opacity-60 pointer-events-none" aria-hidden="true" />
+
+      <div className="relative mx-auto max-w-6xl px-6">
         <Reveal>
           <p className="eyebrow">Sobre Nós</p>
+          <div className="silver-underline mt-4 h-px w-24 bg-gradient-to-r from-silver-3 via-silver-2 to-transparent" />
           <div className="mt-3 grid gap-10 md:grid-cols-2 md:items-end">
             <h2 className="text-4xl md:text-5xl">
               De uma aula de empreendedorismo para quem entende brilho de
@@ -260,33 +265,36 @@ function About() {
           </div>
         </Reveal>
 
-
         <div className="mt-16 grid gap-12 md:grid-cols-2">
           <Reveal>
-            <div className="border border-border bg-card p-8">
-              <p className="text-[0.6875rem] uppercase tracking-[0.28em] text-muted-foreground">
-                O que trazemos
-              </p>
-              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                Trabalhamos para entregar peças que combinem qualidade, preço
-                justo e design clean. Nosso foco é oferecer joias de prata 925
-                que acompanhem o cliente em todos os momentos — do trabalho a um
-                jantar especial — sem perder o brilho e sem exigir cuidados
-                extremos.
-              </p>
+            <div className="silver-card">
+              <div className="silver-card-inner p-8">
+                <p className="text-[0.6875rem] uppercase tracking-[0.28em] text-muted-foreground">
+                  O que trazemos
+                </p>
+                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                  Trabalhamos para entregar peças que combinem qualidade, preço
+                  justo e design clean. Nosso foco é oferecer joias de prata 925
+                  que acompanhem o cliente em todos os momentos — do trabalho a um
+                  jantar especial — sem perder o brilho e sem exigir cuidados
+                  extremos.
+                </p>
+              </div>
             </div>
           </Reveal>
           <Reveal delay={120}>
-            <div className="border border-border bg-card p-8">
-              <p className="text-[0.6875rem] uppercase tracking-[0.28em] text-muted-foreground">
-                Nosso diferencial
-              </p>
-              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                Cada peça passa por fundição, polimento e conferência manual
-                antes de ser enviada. Vendemos em edições reduzidas para manter o
-                padrão, e o atendimento é direto: a sacola é montada no site e o
-                pedido é finalizado no WhatsApp, com total transparência.
-              </p>
+            <div className="silver-card">
+              <div className="silver-card-inner p-8">
+                <p className="text-[0.6875rem] uppercase tracking-[0.28em] text-muted-foreground">
+                  Nosso diferencial
+                </p>
+                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                  Cada peça passa por fundição, polimento e conferência manual
+                  antes de ser enviada. Vendemos em edições reduzidas para manter o
+                  padrão, e o atendimento é direto: a sacola é montada no site e o
+                  pedido é finalizado no WhatsApp, com total transparência.
+                </p>
+              </div>
             </div>
           </Reveal>
         </div>
@@ -303,19 +311,21 @@ function About() {
           <div className="mt-8 grid gap-6 sm:grid-cols-3">
             {members.map((m, i) => (
               <Reveal key={m.role} delay={i * 100}>
-                <div className="flex items-center gap-4 border border-border bg-card p-6">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-full border border-border bg-secondary">
-                    <span className="font-display text-lg tracking-widest">
-                      {m.initials}
-                    </span>
-                  </div>
-                  <div>
-                    <p className="text-xs uppercase tracking-[0.16em] text-muted-foreground">
-                      {m.role}
-                    </p>
-                    <p className="mt-1 text-sm text-muted-foreground/70">
-                      {m.name}
-                    </p>
+                <div className="silver-card">
+                  <div className="silver-card-inner flex items-center gap-4 p-6">
+                    <div className="flex h-14 w-14 items-center justify-center rounded-full border border-border bg-gradient-to-br from-silver-1 to-silver-2 shadow-inner">
+                      <span className="font-display text-lg tracking-widest">
+                        {m.initials}
+                      </span>
+                    </div>
+                    <div>
+                      <p className="text-xs uppercase tracking-[0.16em] text-muted-foreground">
+                        {m.role}
+                      </p>
+                      <p className="mt-1 text-sm text-muted-foreground/70">
+                        {m.name}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </Reveal>
@@ -330,11 +340,13 @@ function About() {
             { number: "SP", label: "Produzido em Agudos" },
           ].map((stat, i) => (
             <Reveal key={stat.label} delay={i * 100}>
-              <div className="border border-border bg-card p-8 text-center">
-                <p className="font-display text-4xl">{stat.number}</p>
-                <p className="mt-2 text-xs uppercase tracking-[0.16em] text-muted-foreground">
-                  {stat.label}
-                </p>
+              <div className="silver-card">
+                <div className="silver-card-inner p-8 text-center">
+                  <p className="font-display text-4xl text-silver">{stat.number}</p>
+                  <p className="mt-2 text-xs uppercase tracking-[0.16em] text-muted-foreground">
+                    {stat.label}
+                  </p>
+                </div>
               </div>
             </Reveal>
           ))}
