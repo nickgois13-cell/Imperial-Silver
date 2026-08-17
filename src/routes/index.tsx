@@ -297,8 +297,7 @@ function About() {
               Time
             </p>
             <p className="mt-2 max-w-md text-sm leading-relaxed text-muted-foreground">
-              Base do time Imperial Silver — você pode completar os nomes e
-              funções no próximo passo.
+              Os responsáveis pela empresa Imperial Silver:
             </p>
           </Reveal>
           <div className="mt-8 grid gap-6 sm:grid-cols-3">
