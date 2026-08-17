@@ -159,15 +159,15 @@ function Hero() {
 function Marquee() {
   const items = [
     "Prata 925 certificada",
-    "Frete grátis acima de R$ 350",
-    "Troca de tamanho gratuita",
+    "\n",
+    "\n",
     "Feito à mão no Brasil",
   ];
   return (
     <div className="border-b border-border bg-secondary/60">
       <div className="mx-auto grid max-w-6xl gap-y-3 px-6 py-5 sm:grid-cols-2 md:grid-cols-4">
-        {items.map((i) => (
-          <p key={i} className="eyebrow text-center">
+        {items.map((i, idx) => (
+          <p key={idx} className="eyebrow text-center">
             {i}
           </p>
         ))}
