@@ -159,15 +159,15 @@ function Hero() {
 function Marquee() {
   const items = [
     "Prata 925 certificada",
-    "Frete grátis acima de R$ 350",
-    "Troca de tamanho gratuita",
+    "\n",
+    "\n",
     "Feito à mão no Brasil",
   ];
   return (
     <div className="border-b border-border bg-secondary/60">
       <div className="mx-auto grid max-w-6xl gap-y-3 px-6 py-5 sm:grid-cols-2 md:grid-cols-4">
-        {items.map((i) => (
-          <p key={i} className="eyebrow text-center">
+        {items.map((i, idx) => (
+          <p key={idx} className="eyebrow text-center">
             {i}
           </p>
         ))}
@@ -297,8 +297,7 @@ function About() {
               Time
             </p>
             <p className="mt-2 max-w-md text-sm leading-relaxed text-muted-foreground">
-              Base do time Imperial Silver — você pode completar os nomes e
-              funções no próximo passo.
+              Os responsáveis pela empresa Imperial Silver:
             </p>
           </Reveal>
           <div className="mt-8 grid gap-6 sm:grid-cols-3">
@@ -355,7 +354,7 @@ function Reviews() {
       <div className="mx-auto max-w-6xl px-6">
         <Reveal>
           <p className="eyebrow">Avaliações</p>
-          <h2 className="mt-3 text-4xl md:text-5xl">4,9 de 5 em 1.284 pedidos</h2>
+          <h2 className="mt-3 text-4xl md:text-5xl">{"\n"}</h2>
         </Reveal>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {reviews.map((r, i) => (
