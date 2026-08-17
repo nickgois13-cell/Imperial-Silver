@@ -218,6 +218,32 @@
   color: transparent;
 }
 
+@utility silver-card {
+  position: relative;
+  border: none;
+  background: linear-gradient(135deg, var(--silver-2) 0%, var(--silver-1) 50%, var(--silver-2) 100%);
+  padding: 1px;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+@utility silver-card-inner {
+  background: var(--card);
+  border-radius: calc(var(--radius) - 1px);
+  height: 100%;
+  width: 100%;
+}
+
+@utility silver-orb {
+  position: absolute;
+  border-radius: 9999px;
+  background: radial-gradient(circle, var(--silver-2) 0%, var(--silver-1) 45%, transparent 70%);
+  filter: blur(80px);
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+
 @utility eyebrow {
   font-size: 0.6875rem;
   letter-spacing: 0.28em;
